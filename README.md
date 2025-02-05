@@ -1,6 +1,13 @@
-# CDRR for Supine Training
+# CDRR for Gait & Balance Training
 
-This repository is for a cable driven rehabilitation robot designed specifically for supine training.
+This repository is for a cable driven rehabilitation robot designed specifically for gait and balance training.
+Under development.
+
+**Gait Training :**
+Fast response is required so current control should perform better.
+
+**Balance Training :**
+For accuate tracking, speed control should perform better.
 
 ## Robot Configuration
 
