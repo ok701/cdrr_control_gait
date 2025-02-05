@@ -22,8 +22,8 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Comminication" Type="Folder">
-			<Item Name="Trigger.vi" Type="VI" URL="../Communication/Trigger.vi"/>
 			<Item Name="DDS.vi" Type="VI" URL="../Communication/DDS.vi"/>
+			<Item Name="Countdown.vi" Type="VI" URL="../Communication/Countdown.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -147,7 +147,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Motor Control" Type="Folder">
 			<Item Name="Motor Control Enhanced.vi" Type="VI" URL="../Motor Control/Motor Control Enhanced.vi"/>
-			<Item Name="Minimum Jerk Trajectory.vi" Type="VI" URL="../Motor Control/Minimum Jerk Trajectory.vi"/>
 			<Item Name="Analogue Read.vi" Type="VI" URL="../Motor Control/Analogue Read.vi"/>
 			<Item Name="PID.vi" Type="VI" URL="../Motor Control/PID.vi"/>
 			<Item Name="encoder.vi" Type="VI" URL="../Motor Control/encoder.vi"/>
@@ -444,10 +443,6 @@ AddOutputFilter chunkFilter
 			</Item>
 		</Item>
 		<Item Name="shared_var.lvlib" Type="Library" URL="../shared_var.lvlib"/>
-		<Item Name="Motor Control Enhanced Position.vi" Type="VI" URL="../Motor Control/Motor Control Enhanced Position.vi"/>
-		<Item Name="PID2.vi" Type="VI" URL="../Motor Control/PID2.vi"/>
-		<Item Name="Impedance Control.vi" Type="VI" URL="../Motor Control/Impedance Control.vi"/>
-		<Item Name="PID for position.vi" Type="VI" URL="../Motor Control/PID for position.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
