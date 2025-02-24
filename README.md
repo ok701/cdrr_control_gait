@@ -24,3 +24,5 @@ For accuate tracking, speed control should perform better.
 **Sensors:**
 - Loadcell
 - Amp
+
+- Hi my name is JSH
