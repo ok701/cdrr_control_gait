@@ -1,5 +1,16 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="21008000">
+	<Property Name="varPersistentID:{01BC696B-19F7-4214-B87C-3D89828658E0}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/record start</Property>
+	<Property Name="varPersistentID:{0818A10C-4209-45ED-8BBE-54D9F82575D8}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/force waveform</Property>
+	<Property Name="varPersistentID:{09013077-6490-4B1E-8B6F-37607AE18022}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/PID gain</Property>
+	<Property Name="varPersistentID:{0FFC786E-FC75-4CE5-A0CD-9C3FDD5FF3A4}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/Ref force</Property>
+	<Property Name="varPersistentID:{180D8ECB-8E52-4E2C-A66E-5D1FE3041CE9}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/Force chart</Property>
+	<Property Name="varPersistentID:{4FBD7689-1C79-4F02-882B-129BCABEB661}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/motor enable</Property>
+	<Property Name="varPersistentID:{75CFFD1F-94A5-44A5-90DB-B46EE40C0EF7}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/Input Voltage</Property>
+	<Property Name="varPersistentID:{8E41C740-AC76-4B6D-8A43-16B2B5BECA90}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/PID switch</Property>
+	<Property Name="varPersistentID:{B49B6E3F-522D-41BB-8AE4-BA3E5444DDFB}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/Stop</Property>
+	<Property Name="varPersistentID:{ECC602D2-78B4-4420-B1AA-7014F3ADA321}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/FF predict</Property>
+	<Property Name="varPersistentID:{ECCBEF4E-0C5F-4FA8-920F-1E9C58B077E0}" Type="Ref">/NI-cRIO-9047-01E2E2FC/motor control LV.lvlib/FF gain</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -11,7 +22,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="PC main.vi" Type="VI" URL="../PC main.vi"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="Force waveform.ctl" Type="VI" URL="../Force waveform.ctl"/>
+			<Item Name="PID gain.ctl" Type="VI" URL="../PID gain.ctl"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-cRIO-9047-01E2E2FC" Type="RT CompactRIO">
@@ -103,7 +118,10 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="Feedforward.vi" Type="VI" URL="../Feedforward.vi"/>
 		<Item Name="Force control.vi" Type="VI" URL="../Force control.vi"/>
+		<Item Name="Force waveform.ctl" Type="VI" URL="../Force waveform.ctl"/>
 		<Item Name="loadcell data read.vi" Type="VI" URL="../loadcell data read.vi"/>
+		<Item Name="motor control LV.lvlib" Type="Library" URL="../motor control LV.lvlib"/>
+		<Item Name="PID gain.ctl" Type="VI" URL="../PID gain.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
